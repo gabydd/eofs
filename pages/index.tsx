@@ -1,18 +1,24 @@
-import { Heading, Flex, Divider, Text, Link,  Icon } from "@chakra-ui/react";
+import { Heading, Flex, Divider, Text, Link, Icon, Box } from "@chakra-ui/react";
 import type { NextPage } from "next";
 import TimeLine from "../components/TimeLine";
 import Event from "../components/Event";
-import { paragraphs } from "../lib/text";
+import { paragraphs, why } from "../lib/text";
 
 const Home: NextPage = () => {
   return (
-    <Flex w="full" direction="column" bg="gray.200" h="100vh">
-      <Heading mt="10px" mb="10px" fontSize="56px" textColor="navy" textAlign="center">
+    <Flex w="full" direction="column" bg="gray.200" h="full">
+      <Heading
+        mt="10px"
+        mb="10px"
+        fontSize="56px"
+        textColor="navy"
+        textAlign="center"
+      >
         The Evolution of Human Skin Colour
       </Heading>
       <Divider w="full" borderColor="black" />
       <Flex h="full" mt="10px" w="full" direction="column" justify="center">
-        <Flex Flex ml="300px" mr="600px" justify="space-between">
+        <Flex Flex ml="200px" mr="500px" justify="space-between">
           {[paragraphs[0], paragraphs[2]].map(({ title, body }) => (
             <Flex align="center" justify="end" direction="column" key={title}>
               <Event title={title} body={body} />
@@ -28,7 +34,7 @@ const Home: NextPage = () => {
         <Flex w="full">
           <TimeLine></TimeLine>
         </Flex>
-        <Flex justifyItems="end" justify="space-between" mr="300px">
+        <Flex justifyItems="end" justify="space-between" mr="200px">
           <Divider orientation="vertical" h="10" />
           {[paragraphs[1], paragraphs[3]].map(({ title, body }) => (
             <Flex align="center" direction="column" key={title}>
@@ -42,6 +48,10 @@ const Home: NextPage = () => {
             </Flex>
           ))}
         </Flex>
+      </Flex>
+      <Flex direction="column" mt="20px" mb="20px" align="center" >
+        <Heading textAlign="center">Why Does This Matter?</Heading>
+        <Text w="600px" mt="5px" bg="pink.100" rounded="md" borderColor="green.700" border="1px">{why}</Text>
       </Flex>
       <Flex ml="auto" mb="3px" mr="3px">
         <Flex align="center" mr="4px">

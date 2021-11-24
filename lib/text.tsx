@@ -16,3 +16,5 @@ export const paragraphs: { title: string; body: string }[] = [
     body: "As some humans moved away from the equator the amount of UV radiation they where exposed to lowered. This meant that the selective pressure of UV radiation harming the folate was lessened, so less melatonin was needed to protect the folate. The lower exposure to UV radiation also had another side effect that put a selective pressure for humans skin to become lighter and that was less vitamin D was being produced so human skin had to become lower in those areas farther from the equator so that the body could absorb the correct amount of UV radiation to have enough vitamin D.",
   },
 ];
+
+export const why = "The evolution of human skin colour shows quite simply that skin colour has nothing to do with any human trait other how much UV radiation is absorbed or blocked from the body. This is important because it is undeniable proof that skin colour does not divide us as humans it is part of our shared history."
