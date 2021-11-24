@@ -5,7 +5,7 @@ export const paragraphs: { title: string; body: string }[] = [
   },
   {
     title: "Humans Lose Their Hair",
-    body: "When humans where still primates they had light skin covered by lot’s of long hair. This was because the hair protected them from the ultraviolet radiation constantly bearing down on them.",
+    body: "When humans evolved from primates they lost much of the hair that surrounded their bodies, this was because with less body hair they could stay cooler under the heat of the sun. The side effect of this though was they now had no protection against ultraviolet radiation.",
   },
   {
     title: "Skin Darkens",
