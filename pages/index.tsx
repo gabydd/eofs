@@ -18,7 +18,7 @@ const Home: NextPage = () => {
       </Heading>
       <Divider w="full" borderColor="black" />
       <Flex h="full" mt="10px" w="full" direction="column" justify="center">
-        <Flex Flex ml="200px" mr="500px" justify="space-between">
+        <Flex Flex ml="200px" mr="300px" justify="space-between">
           {[paragraphs[0], paragraphs[2]].map(({ title, body }) => (
             <Flex align="center" justify="end" direction="column" key={title}>
               <Event title={title} body={body} />
@@ -51,7 +51,7 @@ const Home: NextPage = () => {
       </Flex>
       <Flex direction="column" mt="20px" mb="20px" align="center" >
         <Heading textAlign="center">Why Does This Matter?</Heading>
-        <Text w="600px" mt="5px" bg="pink.100" rounded="md" borderColor="green.700" border="1px">{why}</Text>
+        <Text px="3px" w="600px" mt="5px" bg="pink.50" rounded="md" borderColor="green.700" border="1px">{why}</Text>
       </Flex>
       <Flex ml="auto" mb="3px" mr="3px">
         <Flex align="center" mr="4px">
