@@ -1,4 +1,4 @@
-import { Box, Text, Center } from "@chakra-ui/react";
+import { Box, Text, Center, Divider } from "@chakra-ui/react";
 
 type Props = {
   title: string;
@@ -6,9 +6,14 @@ type Props = {
 };
 const Event = ({ title, body }: Props) => {
   return (
-    <Box w="400px" h="auto" border="2px" boxShadow="2xl" bg="gray.50" rounded="2xl">
-      <Center><Text fontWeight="bold" fontSize="25px">{title}</Text></Center>
-      <Text ml="3px">{body}</Text>
+    <Box w="410px" h="auto" boxShadow="2xl" bg="teal.100" rounded="2xl">
+      <Center>
+        <Text fontWeight="bold" fontSize="25px">
+          {title}
+        </Text>
+      </Center>
+      <Divider borderColor="" />
+      <Text m="10px" textColor="purple.600">{body}</Text>
     </Box>
   );
 };

@@ -17,4 +17,4 @@ export const paragraphs: { title: string; body: string }[] = [
   },
 ];
 
-export const why = "The evolution of human skin colour shows quite simply that skin colour has nothing to do with any human trait other how much UV radiation is absorbed or blocked from the body. This is important because it is undeniable proof that skin colour does not divide us as humans it is part of our shared history."
+export const why = "The evolution of human skin colour shows quite simply that skin colour has nothing to do with any human trait other how much UV radiation is absorbed or blocked from the body. This is important because it is undeniable proof that skin colour does not divide us as humans, it is just one part of our shared history."
